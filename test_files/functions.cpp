@@ -19,13 +19,11 @@ written permission of Adobe.
 /// @return `0`
 int nullary_function_example() { return 0; }
 
-
 /// an example binary function.
 /// @param first the first input
 /// @param second the second input
 /// @return The sum of the two input parameters.
 int binary_function_example(int first, int second) { return 0; }
-
 
 /// an example unary overloaded function
 /// @param first the first input parameter
@@ -45,21 +43,17 @@ auto overloaded(int first, int second) -> double { return first * second; }
 /// @return the product of `first`, `second`, and `third`
 auto overloaded(int first, int second, int third) -> float { return first * second * third; }
 
-
 /// an example static function
 /// @return `0`
 static int static_function_example() { return 0; }
-
 
 /// an example static function with `auto` return type
 /// @return `0`
 static auto static_auto_function_example() { return 0; }
 
-
 /// an example static function with trailing return type
 /// @return `0`
 static auto static_trailing_type_function_example() -> int { return 0; }
-
 
 /// an example template function, deleted by default
 /// @return Not applicable, seeing that the default definition has been deleted.
