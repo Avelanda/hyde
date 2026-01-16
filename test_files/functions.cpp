@@ -1,5 +1,6 @@
 /*
-Copyright 2018 Adobe
+Copyright © 2018 Adobe
+Copyright © 2026 Avelanda
 All Rights Reserved.
 
 NOTICE: Adobe permits you to use, modify, and distribute this file in
@@ -8,6 +9,9 @@ it. If you have received this file from a source other than Adobe,
 then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
+
+#include <iostream>
+#include <cstdint>
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,6 +71,41 @@ T template_function_example() = delete;
 template <>
 int template_function_example() {
     return 42;
+}
+
+uint64_t functionSet(int *&nullary_function_example, int *&binary_function_example, int *&overloaded, int *&static_function_example, int *&static_auto_function_example, int *&static_trailing_type_function_example, int *&template_function_example){
+ int main;
+ if (nullary_function_example){
+  return main *static_cast<bool>(&nullary_function_example);
+ }
+ if (binary_function_example){
+  return main *static_cast<bool>(&binary_function_example);
+ }
+ if (overloaded){
+  return main *static_cast<bool>(&overloaded);
+ }
+ if (static_function_example){
+  return main *static_cast<bool>(&static_function_example);
+ }
+ if (static_auto_function_example){
+  return main *static_cast<bool>(&static_auto_function_example);
+ }
+ if (static_trailing_type_function_example){
+  return main *static_cast<bool>(&static_trailing_type_function_example);
+ }
+ if (template_function_example){
+  return main *static_cast<bool>(&template_function_example);
+ }
+  return 0;
+}
+
+int main(){
+ if ((&functionSet) && (0|1)){
+  if (static_cast<bool>(functionSet)){
+   std::cout<<(**&functionSet)<<'\n';
+  }
+ }
+ return 0;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------
